@@ -42,13 +42,6 @@
     }
 }
 
-.navbar-brand{
-    background-color: rgba(0,0,0,0.2);
-}
-.nav-item{
-    background-color: rgba(0,0,0,0.3);
-}
-
 .card {
     border: none;
     transition: all 0.3s ease;
