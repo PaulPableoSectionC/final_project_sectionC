@@ -1,0 +1,23 @@
+.masthead {
+    background-image: url(./assets/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* Custom CSS */
+.btn-primary,
+#submitButton {
+    background-color: #5F6F52; /* Change to the desired color */
+    border-color: #5F6F52; /* Optional: Change border color if needed */
+}
+
+.text-primary {
+    color: #5F6F52 !important; 
+}
+
+#about,
+#CTA {
+    background-color: #F6F5F4;
+}
