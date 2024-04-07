@@ -59,7 +59,7 @@
     3. Maybe make the image dynamic that it will grow and shrink based on the screen size.
 */
 .lightbox-div{
-    display:none; /* Will be changed to Flex by jQuery later! Required for fade to work properly. */
+    display:none; /* Will be changed to Flex by jQuery later! Required for fade to work properly, otherwise the lightbox would flash on screen before disappearing when trying to hide it with .ready(). */
     position: fixed;
     top:0;
     bottom:0;
