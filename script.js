@@ -1,3 +1,5 @@
+console.log('Hello World!')
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -41,10 +43,79 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-
+    /* -- Creating Own Lightbox --
     // Activate SimpleLightbox plugin for portfolio items
     new SimpleLightbox({
         elements: '#portfolio a.portfolio-box'
     });
+    */
+
 
 });
+
+let lightboxDiv = document.getElementById('lightbox-div')
+let lightboxImage = document.getElementById('lightbox-image')
+let lightboxIndex = 0
+let lightboxImages = [
+    './assets/pexels-elina-fairytale-1.jpg',
+    './assets/pexels-elina-fairytale-2.jpg',
+    './assets/pexels-elina-fairytale-3.jpg',
+    './assets/pexels-elina-fairytale-4.jpg',
+    './assets/pexels-elina-fairytale-5.jpg',
+    './assets/pexels-elina-fairytale-6.jpg',
+]
+
+function SetupLightbox() {
+    let lightboxBroken = false
+
+    // Get and set the elements to the variables.
+    lightboxDiv = document.getElementById('lightbox-div')
+    lightboxImage = document.getElementById('lightbox-image')
+
+    // Check to make sure that none of them are broken. If so, report.
+    if (lightboxDiv == null) {
+        console.error('document.getElementById(\'lightbox-div\') could not be found!')
+        lightboxBroken = true
+    }
+    if (lightboxImage == null) {
+        console.error('document.getElementById(\'lightbox-image\') could not be found!')
+        lightboxBroken = true
+    }
+    return !lightboxBroken
+}
+
+
+// Lightbox Functions
+function ShowLightbox(index){ // On Image Clicked
+    // Setup just in case it didn't find Lightbox.
+    if (lightboxDiv == null || lightboxImage == null) {
+        if (!SetupLightbox()) { // If the elements are broken...
+            return;
+        }
+    }
+    // Wrap Selection.
+    if (index > 5) { index = 0; }
+    else if (index < 0) { index = 5; }
+
+    // Set the index and image.
+    lightboxIndex = index
+    lightboxImage.src = lightboxImages[index]
+
+    // If the lightbox is hidden, show it.
+    if (lightboxDiv.hidden) {
+        // TODO: Add fade-in and fade-out.
+        lightboxDiv.hidden = false
+        lightboxImage.hidden = false
+    }
+}
+function PreviousLightbox() { // On Left Arrow Clicked
+    ShowLightbox(lightboxIndex - 1)
+}
+function NextLightbox() { // On Right Arrow Clicked
+    ShowLightbox(lightboxIndex + 1)
+}
+function HideLightbox() { // On 'X'/Close Button Clicked
+    // TODO: Add fade-in and fade-out.
+    lightboxDiv.hidden = true
+    lightboxImage.hidden = true
+}
