@@ -43,6 +43,14 @@
     }
 }
 
+/* Portfolio */
+.portfolio-box
+{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: 0px, none, rgba(0, 0, 0, 0);
+}
+
 /* Lightbox Elements */
 /* 
     -- Light Box Todo --
@@ -51,7 +59,7 @@
     3. Maybe make the image dynamic that it will grow and shrink based on the screen size.
 */
 .lightbox-div{
-    display:flex;
+    display:none; /* Will be changed to Flex by jQuery later! Required for fade to work properly. */
     position: fixed;
     top:0;
     bottom:0;
