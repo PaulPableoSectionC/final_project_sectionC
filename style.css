@@ -7,6 +7,18 @@
   height: 100vh;
 }
 
+.contact-head {
+  background-image: url(scott-webb-hDyO6rr3kqk-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+
+.contact-head .container {
+  height: 30vh;
+}
+
 /* Custom CSS */
 .btn-primary,
 #submitButton {
