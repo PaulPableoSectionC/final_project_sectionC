@@ -1,3 +1,4 @@
+/* Master Head Element */
 .masthead {
   background-image: url(./assets/background.png);
   background-size: cover;
@@ -54,13 +55,56 @@
     }
 }
 
-.navbar-brand{
-    background-color: rgba(0,0,0,0.2);
+/* Lightbox Elements */
+/* 
+    -- Light Box Todo --
+    1. Make Mobile Accessible Controls.
+    2. Fix Positioning a bit more on the close button so that it's a bit more in line with the right arrow.
+    3. Maybe make the image dynamic that it will grow and shrink based on the screen size.
+*/
+.lightbox-div{
+    display:flex;
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(0,0,0,0.7);
 }
-.nav-item{
-    background-color: rgba(0,0,0,0.3);
+#lightbox-imagebox{
+    background-color: rgb(0,0,255);
+    margin: auto;
+}
+#lightbox-image{
+    margin: auto;
+}
+#lightbox-left-arrow{
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1rem;
+}
+#lightbox-right-arrow{
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1rem;
+}
+#lightbox-close {
+    color: white;
+    margin-top: 5rem;
 }
 
+/* Google Icons CSS Code */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24
+}
+.material-symbols-outlined:hover{ /* Custom Script As They Are Used For Buttons. */
+    cursor: pointer;
+}
+
+
+/* Card Elements */
 .card {
     border: none;
     transition: all 0.3s ease;
