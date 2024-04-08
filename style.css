@@ -137,8 +137,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px; /* Adjust as needed */
-  height: 50px; /* Adjust as needed */
+  width: 75px; /* Adjust as needed */
+  height: 75px; /* Adjust as needed */
   border-radius: 50%;
   overflow: hidden; /* Ensure the image is clipped to the circle */
 }
