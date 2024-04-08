@@ -149,6 +149,41 @@
   display: block;
 }
 
+.logo-footer {
+  max-width: 100px;
+  height: auto;
+}
+
+.footer-links {
+  a {
+    color: inherit; /* Inherit text color from parent */
+    text-decoration: none; /* Remove underline */
+    position: relative; /* Position relative for pseudo-element */
+
+    /* Create underline pseudo-element */
+    &::after {
+      content: ''; /* Empty content for pseudo-element */
+      position: absolute; /* Position absolute for pseudo-element */
+      left: 0;
+      bottom: -2px; /* Adjust underline position */
+      width: 100%;
+      height: 2px; /* Underline thickness */
+      background-color: currentColor; /* Match text color */
+      transition: width 0.3s ease-in-out; /* Animation transition (eases in) */
+      transform-origin: bottom left; /* Animation origin at bottom left */
+      transform: scaleX(0); /* Initial state (invisible) */
+    }
+
+    /* Hover state for anchor links */
+    &:hover::after {
+      width: 100%; /* Full width on hover */
+      transform: scaleX(1); /* Scale to show underline */
+    }
+  }
+}
+
+
+
 /* Responsive styles */
 @media (max-width: 991.98px) {
   .logo-container {
