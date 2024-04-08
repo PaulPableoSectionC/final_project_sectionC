@@ -196,3 +196,45 @@
 /* .nav-item{
     background-color: rgba(0,0,0,0.3);
 } */
+/* Instructor Bio CSS */
+/* body{
+  background-color: #f6f9fc;
+} */
+/* -- Card CSS Elements --*/
+/* .container{
+      background-color: #f6f9fc;
+  width: 80%;
+} */
+
+.title{
+  align-items: center;
+  justify-content: center;
+}
+
+.container h1{
+  color: #304926;
+}
+.d-flex h3{
+  color: #304926;
+}
+
+.row .card{
+  background-color: #ffffff;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* -- Hover effect for cards -- */
+.row .card:hover{
+  transform: scale(1.10);
+}
+
+.card .card-body{
+  color: #5f6f52;
+  line-height: 190%;
+  margin: 2%;
+}
+
+.card .card-img-top{
+  border-radius: 65px;
+  padding: 50px;
+}
