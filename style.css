@@ -132,3 +132,32 @@
     color: #ffffff !important; /* Change text color to white on hover */
 }
 
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  border-radius: 50%;
+  overflow: hidden; /* Ensure the image is clipped to the circle */
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive styles */
+@media (max-width: 991.98px) {
+  .logo-container {
+      width: 50px;
+      height: 50px;
+  }
+
+}
+
+/* .nav-item{
+    background-color: rgba(0,0,0,0.3);
+} */
