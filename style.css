@@ -1,70 +1,57 @@
-.masthead {
-  background-image: url(./assets/background.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
+:root{
+    --bs-body-font-family: 'Montserrat', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.protest-strike-regular {
+    font-family: "Protest Strike", sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+body{
+    background-color: #f6f9fc;
+}
+.container{
+        background-color: #f6f9fc;
+    width: 80%;
 }
 
-/* Custom CSS */
-.btn-primary,
-#submitButton {
-  background-color: #5f6f52; /* Change to the desired color */
-  border-color: #5f6f52; /* Optional: Change border color if needed */
+.title{
+    align-items: center;
+    justify-content: center;
 }
 
-.text-primary {
-  color: #5f6f52 !important;
+h1{
+    color: #304926;
+}
+h3{
+    color: #304926;
 }
 
-#services,
-#CTA {
-  background-color: #f6f9fc;
+.card{
+    background-color: #ffffff;
+    transition: all 0.3s;
 }
 
-/* Custom CSS for cards */
-#services {
-    position: relative; /* Ensure relative positioning for ::after */
-    /* padding-bottom: 30px; Add padding to create space for the squiggly line */
-
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 50px; /* Adjust the height of the squiggly line */
-        background-image: url('./assets/Vector.png');
-        background-repeat: repeat-x;
-        z-index: -1;
-        transform: rotate(0deg); /* Rotate the vector by 3 degrees */
-
-    }
+.card:hover{
+    transform: scale(1.10);
 }
 
-.navbar-brand{
-    background-color: rgba(0,0,0,0.2);
-}
-.nav-item{
-    background-color: rgba(0,0,0,0.3);
+.card-body{
+    color: #5f6f52;
 }
 
-.card {
-    border: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff; /* Default background color */
+.card-img-top{
+    border-radius: 65px;
+    padding: 50px;
 }
 
-.card:hover {
-    transform: translateY(-5px); /* Move card up slightly on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    background-color: #5f6f52; /* Background color on hover */
-    color: #ffffff; /* Text color on hover */
-}
 
-.card:hover .text-primary,
-.card:hover .text-muted {
-    color: #ffffff !important; /* Change text color to white on hover */
-}
+
+
 
