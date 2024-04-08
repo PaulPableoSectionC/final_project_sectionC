@@ -1,3 +1,7 @@
+<div style="text-align:center">
+  <img src="./assets/ZenFit Yoga Studio Logo.png" alt="Zenfit Yoga Studio Logo" />
+</div>
+
 # ZenFit Yoga Studio
 
 This project assignment entails collaboration among students to organize, conceptualize, and execute a website based on a topic of their preference. The project will be segmented into various stages, with the initial phase concentrating on defining the project's scope, designing its implementation, and establishing its style. Teams will be expected to furnish a Figma design illustrating their website's layout, as well as the source code stored on GitHub
