@@ -43,16 +43,10 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-    /* -- Creating Own Lightbox --
-    // Activate SimpleLightbox plugin for portfolio items
-    new SimpleLightbox({
-        elements: '#portfolio a.portfolio-box'
-    });
-    */
-
 
 });
 
+// -- LIGHT-BOX JS > START --
 let lightboxDiv = document.getElementById('lightbox-div')
 let lightboxImage = document.getElementById('lightbox-image')
 let lightboxIndex = 0
@@ -64,6 +58,7 @@ let lightboxImages = [
     './assets/pexels-elina-fairytale-5.jpg',
     './assets/pexels-elina-fairytale-6.jpg',
 ]
+let lightboxFadeSpeed = 1.0 // How fast the fade happens in seconds.
 
 function SetupLightbox() {
     let lightboxBroken = false
@@ -103,9 +98,7 @@ function ShowLightbox(index){ // On Image Clicked
 
     // If the lightbox is hidden, show it.
     if (lightboxDiv.hidden) {
-        // TODO: Add fade-in and fade-out.
-        lightboxDiv.hidden = false
-        lightboxImage.hidden = false
+        $('#lightbox-div').fadeIn(1000)
     }
 }
 function PreviousLightbox() { // On Left Arrow Clicked
@@ -114,8 +107,19 @@ function PreviousLightbox() { // On Left Arrow Clicked
 function NextLightbox() { // On Right Arrow Clicked
     ShowLightbox(lightboxIndex + 1)
 }
-function HideLightbox() { // On 'X'/Close Button Clicked
-    // TODO: Add fade-in and fade-out.
-    lightboxDiv.hidden = true
-    lightboxImage.hidden = true
-}
+
+$(document).ready(function () {
+    $('.lightbox-div').ready(function () {
+        $('.lightbox-div').css('display', 'flex').hide().fadeOut(0)
+    })
+
+    $('.portfolio-box').click(function () {
+        console.log('Hello World!')
+        $("#lightbox-div").fadeIn((lightboxFadeSpeed * 1000))
+    })
+    $('#lightbox-close').click(function () {
+        console.log('Hello World!')
+        $('.lightbox-div').fadeOut((lightboxFadeSpeed * 1000))
+    });
+})
+// -- LIGHT-BOX JS > END --
