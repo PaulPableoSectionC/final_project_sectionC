@@ -84,6 +84,8 @@
     margin: auto;
 }
 #lightbox-image{
+    width: 50%;
+    height: auto;
     margin: auto;
 }
 #lightbox-left-arrow{
@@ -182,7 +184,23 @@
   }
 }
 
-
+/* Schedule & Booking */
+.schedule-header{
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+  width: 40rem;
+  background-color: rgba(255, 226, 74, 0.9);
+}
+.schedule-date-number-text{
+  font-size: 100%;
+  margin: 0rem;
+}
+.schedule-date-schedule-text{
+  font-size: 90%;
+  font-weight: 400;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
 
 /* Responsive styles */
 @media (max-width: 991.98px) {
@@ -191,6 +209,10 @@
       height: 50px;
   }
 
+  #lightbox-image{
+    width: 50%;
+    height: auto;
+  }
 }
 
 /* .nav-item{
