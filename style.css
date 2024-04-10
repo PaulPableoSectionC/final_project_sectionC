@@ -7,6 +7,7 @@
   height: 100vh;
 }
 
+/*Page Heading Elements*/
 .contact-head {
   background-image: url(./assets/scott-webb-hDyO6rr3kqk-unsplash.jpg);
   background-size: cover;
@@ -17,6 +18,11 @@
 
 .contact-head .container {
   height: 40vh;
+}
+
+/*Services Page Mobile Details Section*/
+.mobile-details {
+  display: none;
 }
 
 /* Custom CSS */
@@ -191,6 +197,12 @@
       height: 50px;
   }
 
+}
+
+@media (max-width: 768px) {
+  .mobile-details {
+    display: block;
+  }
 }
 
 /* .nav-item{
