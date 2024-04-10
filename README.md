@@ -10,6 +10,7 @@ This project assignment entails collaboration among students to organize, concep
 
 - [About](#about)
 - [How](#How)
+- [Contribution](#Contribution)
 - [Features](#features)
 - [Design](#design)
 
@@ -25,7 +26,7 @@ Downloading the Project:
 Here are the steps necessary on how to run the repo locally on your machine:
 
 Clone the repository from GitHub using the following command:
-git clone https://github.com/your-username/Final-Assignment-SectionC.git
+git clone https://github.com/PaulPableoSectionC/final_project_sectionC.git
 
 Here are the npm dependencies to install: 
 
@@ -41,19 +42,37 @@ npm install simplelightbox
 <!--JQuery npm-->
 npm install jquery@3.7.1
 
-
-API keys
-<!--Google fonts-->
-const API_KEY = 'https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet'
-const API_KEY = 'rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0'
-
-<!--Google symbols and icons-->
-const API_KEY = 'rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0'
-const API_KEY = 'rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0'
-const API_KEY = 'rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0'
-
 npm start
 open index.html in web browswer
+
+## Contribution
+Never made an open source contribution before? Wondering how contributions work in the in our project? Here's a quick rundown!
+
+Find an issue that you are interested in addressing or a feature that you would like to add.
+
+Fork the repository associated with the issue to your local GitHub organization. This means that you will have a copy of the repository under your-GitHub-username/repository-name.
+
+Clone the repository to your local machine using git clone [https://github.com/github-username/repository-name.git](https://github.com/PaulPableoSectionC/final_project_sectionC.git).
+
+Create a new branch for your fix using git checkout -b branch-name-here.
+
+Make the appropriate changes for the issue you are trying to address or the feature that you want to add.
+
+Use git add insert-paths-of-changed-files-here to add the file contents of the changed files to the "snapshot" git uses to manage the state of the project, also known as the index.
+
+Use git commit -m "Insert a short message of the changes made here" to store the contents of the index with a descriptive message.
+
+Push the changes to the remote repository using git push origin branch-name-here.
+
+Submit a pull request to the upstream repository.
+
+Title the pull request with a short description of the changes made and the issue or bug number associated with your change. For example, you can title an issue like so "Added more log outputting to resolve #4352".
+
+In the description of the pull request, explain the changes that you made, any issues you think exist with the pull request you made, and any questions you have for the maintainer. It's OK if your pull request is not perfect (no pull request is), the reviewer will be able to help you fix any problems and improve it!
+
+Wait for the pull request to be reviewed by a maintainer.
+
+Make changes to the pull request if the reviewing maintainer recommends them.
 
 ## Features
 
@@ -66,7 +85,7 @@ open index.html in web browswer
 - Detailed descriptions of each class offered, including duration, intensity, and benefits
 
 ## Design
-Figma Inspo: <link href="https://www.figma.com/file/vpKkjmBKjYrVxF1DWxuFcP/Zenfit-Studio?type=design&node-id=0-1&mode=design&t=Wyf5YXIP91SIqsgF-0"
+Figma Design: [Zenfit Studio](https://www.figma.com/file/vpKkjmBKjYrVxF1DWxuFcP/Zenfit-Studio?type=design&node-id=0-1&mode=design&t=Wyf5YXIP91SIqsgF-0)
 
 Soothing Color Palette: The ZenFit Yoga Studio website embraces a calming and tranquil color scheme to reflect the studio's serene atmosphere. Soft tones and gentle greens are utilized to evoke a sense of relaxation and harmony, creating an inviting space for visitors to explore
 
