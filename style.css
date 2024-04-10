@@ -8,7 +8,7 @@
 }
 
 .contact-head {
-  background-image: url(scott-webb-hDyO6rr3kqk-unsplash.jpg);
+  background-image: url(./assets/scott-webb-hDyO6rr3kqk-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -85,6 +85,8 @@
 }
 #lightbox-image{
     margin: auto;
+    width: 50%;
+    height: auto;
 }
 #lightbox-left-arrow{
     color: white;
@@ -100,7 +102,7 @@
 }
 #lightbox-close {
     color: white;
-    margin-top: 5rem;
+    margin-top: 7rem;
 }
 
 /* Google Icons CSS Code */
@@ -195,6 +197,7 @@
 
 /* .nav-item{
     background-color: rgba(0,0,0,0.3);
+
 } */
 
 /* Gallery Section */
@@ -273,4 +276,67 @@
 
 .accordion-button:hover {
   background-color: #44563d;
+}
+=======
+/* -- Card CSS Elements --*/
+#bio{
+  background-color: #f6f9fc;
+
+  .title{
+    align-items: center;
+    justify-content: center;
+    }
+    .container{
+      background-color: #f6f9fc;
+}
+    
+    .container h1{
+    color: #304926;
+    }
+    .d-flex h3{
+    color: #304926;
+    }
+    
+    .row .card{
+    background-color: #ffffff;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    /* -- Hover effect for cards -- */
+    .row .card:hover{
+    transform: scale(1.10);
+    }
+    
+    .card .card-body{
+    color: #5f6f52;
+    line-height: 190%;
+    margin: 2%;
+    }
+    
+    .card .card-img-top{
+    border-radius: 65px;
+    padding: 50px;
+    }
+}
+
+
+/* -- Schedule & Booking */
+.card-nohover {
+    background-color: #ffffff;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #5f6f52;
+    line-height: 190%;
+    margin: 2%;
+    border-radius: 65px;
+    padding: 50px;
+}
+.schedule-header{
+    margin-top: 8rem;
+}
+.schedule-date-number-text{
+    font-size: 115%;
+}
+.schedule-date-schedule-text{
+    font-size: 90%;
 }

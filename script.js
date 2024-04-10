@@ -107,19 +107,4 @@ function PreviousLightbox() { // On Left Arrow Clicked
 function NextLightbox() { // On Right Arrow Clicked
     ShowLightbox(lightboxIndex + 1)
 }
-
-$(document).ready(function () {
-    $('.lightbox-div').ready(function () {
-        $('.lightbox-div').css('display', 'flex').hide().fadeOut(0)
-    })
-
-    $('.portfolio-box').click(function () {
-        console.log('Hello World!')
-        $("#lightbox-div").fadeIn((lightboxFadeSpeed * 1000))
-    })
-    $('#lightbox-close').click(function () {
-        console.log('Hello World!')
-        $('.lightbox-div').fadeOut((lightboxFadeSpeed * 1000))
-    });
-})
 // -- LIGHT-BOX JS > END --
