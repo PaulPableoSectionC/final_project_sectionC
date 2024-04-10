@@ -30,6 +30,13 @@
 #submitButton {
   background-color: #5f6f52; /* Change to the desired color */
   border-color: #5f6f52; /* Optional: Change border color if needed */
+
+  &:hover {
+    color: #333;
+    background-color: #f6f9fc; /* Change to the desired color */
+    border-color: #f6f9fc;
+
+  }
 }
 
 .text-primary {
@@ -43,30 +50,28 @@
 
 /* Custom CSS for cards */
 #services {
-    position: relative; /* Ensure relative positioning for ::after */
-    /* padding-bottom: 30px; Add padding to create space for the squiggly line */
+  position: relative; /* Ensure relative positioning for ::after */
+  /* padding-bottom: 30px; Add padding to create space for the squiggly line */
 
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 50px; /* Adjust the height of the squiggly line */
-        background-image: url('./assets/Vector.png');
-        background-repeat: repeat-x;
-        z-index: -1;
-        transform: rotate(0deg); /* Rotate the vector by 3 degrees */
-
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Adjust the height of the squiggly line */
+    background-image: url("./assets/Vector.png");
+    background-repeat: repeat-x;
+    z-index: -1;
+    transform: rotate(0deg); /* Rotate the vector*/
+  }
 }
 
 /* Portfolio */
-.portfolio-box
-{
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    outline: 0px, none, rgba(0, 0, 0, 0);
+.portfolio-box {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: 0px, none, rgba(0, 0, 0, 0);
 }
 
 /* Lightbox Elements */
@@ -76,70 +81,69 @@
     2. Fix Positioning a bit more on the close button so that it's a bit more in line with the right arrow.
     3. Maybe make the image dynamic that it will grow and shrink based on the screen size.
 */
-.lightbox-div{
-    display:none; /* Will be changed to Flex by jQuery later! Required for fade to work properly, otherwise the lightbox would flash on screen before disappearing when trying to hide it with .ready(). */
-    position: fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    background-color: rgba(0,0,0,0.7);
+.lightbox-div {
+  display: none; /* Will be changed to Flex by jQuery later! Required for fade to work properly, otherwise the lightbox would flash on screen before disappearing when trying to hide it with .ready(). */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
 }
-#lightbox-imagebox{
-    background-color: rgb(0,0,255);
-    margin: auto;
+#lightbox-imagebox {
+  background-color: rgb(0, 0, 255);
+  margin: auto;
 }
-#lightbox-image{
-    margin: auto;
-    width: 50%;
-    height: auto;
+#lightbox-image {
+  margin: auto;
+  width: 50%;
+  height: auto;
 }
-#lightbox-left-arrow{
-    color: white;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 1rem;
+#lightbox-left-arrow {
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1rem;
 }
-#lightbox-right-arrow{
-    color: white;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 1rem;
+#lightbox-right-arrow {
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 1rem;
 }
 #lightbox-close {
-    color: white;
-    margin-top: 7rem;
+  color: white;
+  margin-top: 7rem;
 }
 
 /* Google Icons CSS Code */
 .material-symbols-outlined {
-    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
-.material-symbols-outlined:hover{ /* Custom Script As They Are Used For Buttons. */
-    cursor: pointer;
+.material-symbols-outlined:hover {
+  /* Custom Script As They Are Used For Buttons. */
+  cursor: pointer;
 }
-
 
 /* Card Elements */
 .card {
-    border: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff; /* Default background color */
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Default background color */
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Move card up slightly on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    background-color: #5f6f52; /* Background color on hover */
-    color: #ffffff; /* Text color on hover */
+  transform: translateY(-5px); /* Move card up slightly on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  background-color: #5f6f52; /* Background color on hover */
+  color: #ffffff; /* Text color on hover */
 }
 
 .card:hover .text-primary,
 .card:hover .text-muted {
-    color: #ffffff !important; /* Change text color to white on hover */
+  color: #ffffff !important; /* Change text color to white on hover */
 }
-
 
 .logo-container {
   display: flex;
@@ -170,7 +174,7 @@
 
     /* Create underline pseudo-element */
     &::after {
-      content: ''; /* Empty content for pseudo-element */
+      content: ""; /* Empty content for pseudo-element */
       position: absolute; /* Position absolute for pseudo-element */
       left: 0;
       bottom: -2px; /* Adjust underline position */
@@ -190,15 +194,12 @@
   }
 }
 
-
-
 /* Responsive styles */
 @media (max-width: 991.98px) {
   .logo-container {
-      width: 50px;
-      height: 50px;
+    width: 50px;
+    height: 50px;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -287,46 +288,45 @@
 }
 
 /* -- Card CSS Elements --*/
-#bio{
+#bio {
   background-color: #f6f9fc;
 
-  .title{
+  .title {
     align-items: center;
     justify-content: center;
-    }
-    .container{
-      background-color: #f6f9fc;
-}
-    
-    .container h1{
+  }
+  .container {
+    background-color: #f6f9fc;
+  }
+
+  .container h1 {
     color: #304926;
-    }
-    .d-flex h3{
+  }
+  .d-flex h3 {
     color: #304926;
-    }
-    
-    .row .card{
+  }
+
+  .row .card {
     background-color: #ffffff;
     transition: all 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    /* -- Hover effect for cards -- */
-    .row .card:hover{
-    transform: scale(1.10);
-    }
-    
-    .card .card-body{
+  }
+  /* -- Hover effect for cards -- */
+  .row .card:hover {
+    transform: scale(1.1);
+  }
+
+  .card .card-body {
     color: #5f6f52;
     line-height: 190%;
     margin: 2%;
-    }
-    
-    .card .card-img-top{
+  }
+
+  .card .card-img-top {
     border-radius: 65px;
     padding: 50px;
-    }
+  }
 }
-
 
 /* -- Schedule & Booking */
 .card-nohover {
