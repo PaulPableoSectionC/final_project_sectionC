@@ -29,6 +29,8 @@ git clone https://github.com/your-username/Final-Assignment-SectionC.git
 
 Here are the npm dependencies to install: 
 
+Navigate into the folder in the command line, where the index.html is located.
+
 npm install
 <!--Bootstrap npm-->
 npm i bootstrap@5.3.3
@@ -38,6 +40,7 @@ npm i bootstrap-icons
 npm install simplelightbox
 <!--JQuery npm-->
 npm install jquery@3.7.1
+
 
 API keys
 <!--Google fonts-->
@@ -49,7 +52,8 @@ const API_KEY = 'rel="stylesheet" href="https://fonts.googleapis.com/css2?family
 const API_KEY = 'rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0'
 const API_KEY = 'rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0'
 
-
+npm start
+open index.html in web browswer
 
 ## Features
 
