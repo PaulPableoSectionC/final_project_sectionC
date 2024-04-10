@@ -91,6 +91,8 @@
 }
 #lightbox-image{
     margin: auto;
+    width: 50%;
+    height: auto;
 }
 #lightbox-left-arrow{
     color: white;
@@ -106,7 +108,7 @@
 }
 #lightbox-close {
     color: white;
-    margin-top: 5rem;
+    margin-top: 7rem;
 }
 
 /* Google Icons CSS Code */
@@ -209,6 +211,85 @@
     background-color: rgba(0,0,0,0.3);
 
 } */
+
+/* Gallery Section */
+#gallery {
+  padding: 100px 0;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-link {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.portfolio-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(95, 111, 82, 0.9);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-hover-content {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #fff;
+}
+
+.portfolio-item:hover .portfolio-hover {
+  opacity: 1;
+}
+
+.portfolio-item:hover .portfolio-hover-content {
+  opacity: 1;
+}
+
+.portfolio-caption {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.portfolio-caption-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.portfolio-caption-subheading {
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* FAQ Section */
+#faq {
+  padding: 100px 0;
+}
+
+.accordion-button {
+  background-color: #5f6f52;
+  color: #fff;
+}
+
+.accordion-button:hover {
+  background-color: #44563d;
+}
+=======
 /* -- Card CSS Elements --*/
 #bio{
   background-color: #f6f9fc;
@@ -248,4 +329,26 @@
     border-radius: 65px;
     padding: 50px;
     }
+}
+
+
+/* -- Schedule & Booking */
+.card-nohover {
+    background-color: #ffffff;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #5f6f52;
+    line-height: 190%;
+    margin: 2%;
+    border-radius: 65px;
+    padding: 50px;
+}
+.schedule-header{
+    margin-top: 8rem;
+}
+.schedule-date-number-text{
+    font-size: 115%;
+}
+.schedule-date-schedule-text{
+    font-size: 90%;
 }
