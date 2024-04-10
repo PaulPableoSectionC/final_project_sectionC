@@ -277,10 +277,6 @@
 }
 
 /* FAQ Section */
-#faq {
-  padding: 100px 0;
-}
-
 .accordion-button {
   background-color: #5f6f52;
   color: #fff;
@@ -289,7 +285,7 @@
 .accordion-button:hover {
   background-color: #44563d;
 }
-=======
+
 /* -- Card CSS Elements --*/
 #bio{
   background-color: #f6f9fc;
@@ -342,9 +338,6 @@
     margin: 2%;
     border-radius: 65px;
     padding: 50px;
-}
-.schedule-header{
-    margin-top: 8rem;
 }
 .schedule-date-number-text{
     font-size: 115%;
