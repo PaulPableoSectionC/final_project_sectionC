@@ -278,10 +278,6 @@
 }
 
 /* FAQ Section */
-#faq {
-  padding: 100px 0;
-}
-
 .accordion-button {
   background-color: #5f6f52;
   color: #fff;
@@ -334,21 +330,18 @@
 
 /* -- Schedule & Booking */
 .card-nohover {
-  background-color: #ffffff;
-  transition: all 0.3s;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  color: #5f6f52;
-  line-height: 190%;
-  margin: 2%;
-  border-radius: 65px;
-  padding: 50px;
+    background-color: #ffffff;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #5f6f52;
+    line-height: 190%;
+    margin: 2%;
+    border-radius: 65px;
+    padding: 50px;
 }
-.schedule-header {
-  margin-top: 8rem;
+.schedule-date-number-text{
+    font-size: 115%;
 }
-.schedule-date-number-text {
-  font-size: 115%;
-}
-.schedule-date-schedule-text {
-  font-size: 90%;
+.schedule-date-schedule-text{
+    font-size: 90%;
 }

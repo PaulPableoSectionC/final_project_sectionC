@@ -22,10 +22,38 @@ schedule classes, provide information about instructors, and facilitate online b
 
 Downloading the Project:
 
+Here are the steps necessary on how to run the repo locally on your machine:
+
 Clone the repository from GitHub using the following command:
 git clone https://github.com/your-username/Final-Assignment-SectionC.git
 
+Here are the npm dependencies to install: 
 
+Navigate into the folder in the command line, where the index.html is located.
+
+npm install
+<!--Bootstrap npm-->
+npm i bootstrap@5.3.3
+<!--Bootstrap Icons npm-->
+npm i bootstrap-icons
+<!--SimpleLightbox npm-->
+npm install simplelightbox
+<!--JQuery npm-->
+npm install jquery@3.7.1
+
+
+API keys
+<!--Google fonts-->
+const API_KEY = 'https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet'
+const API_KEY = 'rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0'
+
+<!--Google symbols and icons-->
+const API_KEY = 'rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0'
+const API_KEY = 'rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0'
+const API_KEY = 'rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0'
+
+npm start
+open index.html in web browswer
 
 ## Features
 
@@ -38,6 +66,7 @@ git clone https://github.com/your-username/Final-Assignment-SectionC.git
 - Detailed descriptions of each class offered, including duration, intensity, and benefits
 
 ## Design
+Figma Inspo: <link href="https://www.figma.com/file/vpKkjmBKjYrVxF1DWxuFcP/Zenfit-Studio?type=design&node-id=0-1&mode=design&t=Wyf5YXIP91SIqsgF-0"
 
 Soothing Color Palette: The ZenFit Yoga Studio website embraces a calming and tranquil color scheme to reflect the studio's serene atmosphere. Soft tones and gentle greens are utilized to evoke a sense of relaxation and harmony, creating an inviting space for visitors to explore
 
