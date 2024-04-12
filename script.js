@@ -135,8 +135,8 @@ $(document).ready(function () {
 //Login Page
 $(document).ready(function() {
     //Declare the values for username and password.
-    let username = "Zenfit";
-    let password = "12345";
+    let username = "username";
+    let password = "password";
 
     //Call a function when the submit button is clicked.
     $('#loginButton').click( function(event) {
