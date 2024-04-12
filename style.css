@@ -25,6 +25,15 @@
   display: none;
 }
 
+/*Login Page Background*/
+.login-body {
+  background-image: url(./assets/pexels-nicollazzi-xiong-668353.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
 /* Custom CSS */
 .btn-primary,
 #submitButton {
@@ -205,6 +214,9 @@
 @media (max-width: 768px) {
   .mobile-details {
     display: block;
+  }
+  .login-div {
+    width: 80% !important;
   }
 }
 

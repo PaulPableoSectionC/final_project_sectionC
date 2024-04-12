@@ -131,3 +131,23 @@ $(document).ready(function () {
 });
 
 // -- LIGHT-BOX EXTRA JS > END --
+
+//Login Page
+$(document).ready(function() {
+    //Declare the values for username and password.
+    let username = "Zenfit";
+    let password = "12345";
+
+    //Call a function when the submit button is clicked.
+    $('#loginButton').click( function(event) {
+        event.preventDefault();
+        //Display an error message as long as the username or password is incorrect.
+        if($('#usernameField').val() != username || $('#passwordField').val() != password) {
+            alert("Incorrect username or password. Please try again.");
+        }
+        //If username and password are correct, go to account page
+        else {
+          window.location.href="account.html";
+        }
+    })
+});
