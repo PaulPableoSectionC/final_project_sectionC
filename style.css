@@ -340,3 +340,43 @@
 .schedule-date-schedule-text{
     font-size: 90%;
 }
+/* -- Price Page -- */
+#prices {
+  
+  .title {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container h1 {
+    color: #304926;
+  }
+  .d-flex h3 {
+    color: #304926;
+  }
+
+  .row .card {
+    background-color: #f6f9fc;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .card-header{
+      margin: 0;
+      background-color: #5f6f52;
+      color: #ffffff;
+  }
+
+  .card .card-body {
+    color: black;
+    line-height: 190%;
+    margin: 2%;
+  }
+  .btn{
+      background-color: #5f6f52
+  }
+  small{
+      align-items: center;
+      justify-content: center;
+      padding-left: 45%;
+  }
+}
