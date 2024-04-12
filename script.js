@@ -131,3 +131,71 @@ $(document).ready(function () {
 });
 
 // -- LIGHT-BOX EXTRA JS > END --
+
+// Define arrays of random values for profile information
+const names = [
+  "John Doe",
+  "Jane Smith",
+  "David Johnson",
+  "Emily Brown",
+  "Michael Wilson",
+  "Sarah Davis",
+  "Robert Miller",
+  "Jessica Martinez"
+];
+
+const professions = [
+  "Web Developer",
+  "Graphic Designer",
+  "Yoga Instructor",
+  "Software Engineer",
+  "Digital Marketer",
+  "Fitness Trainer",
+  "Photographer",
+  "Musician"
+];
+
+const emails = [
+  "john.doe@example.com",
+  "jane.smith@example.com",
+  "david.johnson@example.com",
+  "emily.brown@example.com",
+  "michael.wilson@example.com",
+  "sarah.davis@example.com",
+  "robert.miller@example.com",
+  "jessica.martinez@example.com"
+];
+
+const phoneNumbers = [
+  "123-456-7890",
+  "987-654-3210",
+  "555-123-4567",
+  "777-888-9999",
+  "444-555-6666",
+  "111-222-3333",
+  "999-888-7777",
+  "666-777-8888"
+];
+
+// Function to randomly select an item from an array
+function getRandomItem(array) {
+  const randomIndex = Math.floor(Math.random() * array.length);
+  return array[randomIndex];
+}
+
+// Function to update profile information dynamically
+function updateProfile() {
+  const nameElement = document.querySelector('.profile-head h5');
+  const professionElement = document.querySelector('.profile-head h6');
+  const emailElement = document.querySelector('.col-md-6 p:nth-of-type(3)');
+  const phoneElement = document.querySelector('.col-md-6 p:nth-of-type(4)');
+
+  nameElement.textContent = getRandomItem(names);
+  professionElement.textContent = getRandomItem(professions);
+  emailElement.textContent = getRandomItem(emails);
+  phoneElement.textContent = getRandomItem(phoneNumbers);
+}
+
+// Execute the updateProfile function when the page is loaded or refreshed
+window.addEventListener('load', updateProfile);
+
