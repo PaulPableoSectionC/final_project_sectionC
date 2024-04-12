@@ -133,23 +133,26 @@ $(document).ready(function () {
 // -- LIGHT-BOX EXTRA JS > END --
 
 //Login Page
-$(document).ready(function() {
-    //Declare the values for username and password.
-    let username = "username";
-    let password = "password";
+$(document).ready(function () {
+  //Declare the values for username and password.
+  let username = "username";
+  let password = "password";
 
-    //Call a function when the submit button is clicked.
-    $('#loginButton').click( function(event) {
-        event.preventDefault();
-        //Display an error message as long as the username or password is incorrect.
-        if($('#usernameField').val() != username || $('#passwordField').val() != password) {
-            alert("Incorrect username or password. Please try again.");
-        }
-        //If username and password are correct, go to account page
-        else {
-          window.location.href="account.html";
-        }
-    })
+  //Call a function when the submit button is clicked.
+  $("#loginButton").click(function (event) {
+    event.preventDefault();
+    //Display an error message as long as the username or password is incorrect.
+    if (
+      $("#usernameField").val() != username ||
+      $("#passwordField").val() != password
+    ) {
+      alert("Incorrect username or password. Please try again.");
+    }
+    //If username and password are correct, go to account page
+    else {
+      window.location.href = "account.html";
+    }
+  });
 });
 
 // Define arrays of random values for profile information
@@ -161,7 +164,7 @@ const names = [
   "Michael Wilson",
   "Sarah Davis",
   "Robert Miller",
-  "Jessica Martinez"
+  "Jessica Martinez",
 ];
 
 const professions = [
@@ -172,7 +175,7 @@ const professions = [
   "Digital Marketer",
   "Fitness Trainer",
   "Photographer",
-  "Musician"
+  "Musician",
 ];
 
 const emails = [
@@ -183,7 +186,7 @@ const emails = [
   "michael.wilson@example.com",
   "sarah.davis@example.com",
   "robert.miller@example.com",
-  "jessica.martinez@example.com"
+  "jessica.martinez@example.com",
 ];
 
 const phoneNumbers = [
@@ -194,7 +197,7 @@ const phoneNumbers = [
   "444-555-6666",
   "111-222-3333",
   "999-888-7777",
-  "666-777-8888"
+  "666-777-8888",
 ];
 
 // Function to randomly select an item from an array
@@ -205,10 +208,10 @@ function getRandomItem(array) {
 
 // Function to update profile information dynamically
 function updateProfile() {
-  const nameElement = document.querySelector('.profile-head h5');
-  const professionElement = document.querySelector('.profile-head h6');
-  const emailElement = document.querySelector('.col-md-6 p:nth-of-type(3)');
-  const phoneElement = document.querySelector('.col-md-6 p:nth-of-type(4)');
+  const nameElement = document.querySelector(".profile-head h5");
+  const professionElement = document.querySelector(".profile-head h6");
+  const emailElement = document.querySelector(".col-md-6 p:nth-of-type(3)");
+  const phoneElement = document.querySelector(".col-md-6 p:nth-of-type(4)");
 
   nameElement.textContent = getRandomItem(names);
   professionElement.textContent = getRandomItem(professions);
@@ -217,4 +220,4 @@ function updateProfile() {
 }
 
 // Execute the updateProfile function when the page is loaded or refreshed
-window.addEventListener('load', updateProfile);
+window.addEventListener("load", updateProfile);
