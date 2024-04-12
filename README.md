@@ -43,7 +43,11 @@ npm install simplelightbox
 npm install jquery@3.7.1
 
 npm start
-open index.html in web browswer
+open index.html in web browser
+
+Log In Credentials
+username = "username";
+password = "password";
 
 ## Contribution
 Never made an open source contribution before? Wondering how contributions work in the in our project? Here's a quick rundown!
